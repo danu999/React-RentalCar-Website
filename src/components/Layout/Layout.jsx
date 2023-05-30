@@ -1,15 +1,22 @@
-import React, { Fragment } from "react";
-
+import React, { Fragment } from "react"
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Routers from "../../routers/Routers";
+import HeaderAfterLogin from "../../pages/HeaderAfterLogin"
 
 const Layout = () => {
+  const [login,setLogin]=React.useState(false)
   return (
     <Fragment>
-      <Header />
+      {
+        login 
+        ?
+        <HeaderAfterLogin/>
+        :
+        <Header/>
+      }
       <div>
-        <Routers />
+        <Routers login={login} setLogin={setLogin}/>
       </div>
       <Footer />
     </Fragment>

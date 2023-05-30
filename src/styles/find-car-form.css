@@ -29,7 +29,7 @@
 }
 
 .form {
-  background: #fff;
+  background: rgba(132, 177, 229, 0.157);
   padding-top: 55px;
   padding-bottom: 50px;
   padding-left: 15px;
@@ -73,8 +73,8 @@
 }
 
 .find__car-btn {
-  background: #000d6b !important;
-  color: #fff !important;
+  background: #7c8a972a;
+  color: white;
   padding: 8px 15px;
   width: 100%;
   border: none;

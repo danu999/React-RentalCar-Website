@@ -8,8 +8,11 @@ import Blog from "../pages/Blog";
 import BlogDetails from "../pages/BlogDetails";
 import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
+import Login from "../pages/Login";
+import Register from "../pages/Register";
+import HeaderAfterLogin from "../pages/HeaderAfterLogin"
 
-const Routers = () => {
+const Routers = ({login,setLogin}) => {
   return (
     <Routes>
       <Route path="/" element={<Navigate to="/home" />} />
@@ -20,6 +23,9 @@ const Routers = () => {
       <Route path="/blogs" element={<Blog />} />
       <Route path="/blogs/:slug" element={<BlogDetails />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/login" element={<Login login={login} setLogin={setLogin} />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/headerafterlogin" element={<HeaderAfterLogin/>} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

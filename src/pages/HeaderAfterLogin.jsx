@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
-
 import { Container, Row, Col } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
-import "../../styles/header.css";
+import "../styles/headerafterlogin.css";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const navLinks = [
   {
@@ -26,18 +27,21 @@ const navLinks = [
     path: "/contact",
     display: "Contact",
   },
-  {
-    path: "/login",
-  },
-  {
-    path: "/register",
-  },
 ];
 
 const Header = () => {
   const menuRef = useRef(null);
-
+  const navigate = useNavigate();
   const toggleMenu = () => menuRef.current.classList.toggle("menu__active");
+
+  const Logout = async () => {
+    try {
+      await axios.delete("http://localhost:5000/logout");
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <header className="header">
@@ -57,11 +61,8 @@ const Header = () => {
             <Col lg="6" md="6" sm="6">
               <div className="header__top__right d-flex align-items-center justify-content-end gap-3">
                 <Link to="/login" className=" d-flex align-items-center gap-1">
-                  <i class="ri-login-circle-line"></i> Login
-                </Link>
-
-                <Link to="/register" className=" d-flex align-items-center gap-1">
-                  <i class="ri-user-line"></i> Register
+                  <i class="ri-logout-circle-line" onClick={Logout}>
+                    Logout</i>
                 </Link>
               </div>
             </Col>

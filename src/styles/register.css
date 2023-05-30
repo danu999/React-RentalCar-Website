@@ -1,0 +1,56 @@
+.auth-form-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem;
+    border-radius: 10px;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.register-form {
+    padding: 5rem 3rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    align-items: center;
+    padding-top: 25px;
+    background: #014542;
+}
+
+.label_input {
+    display: flex;
+    text-align: left;
+    padding: 0.25rem 0;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.input_text_register {
+    margin: 0.3rem;
+    padding: 0.3rem;
+    border-radius: 8px;
+    background: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    margin-top: 3px;
+}
+
+.btn_register {
+  padding: 5px 30px;
+  background: #089891;
+  color: #ffff;
+  border: none;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-content: center;
+  margin: 25px;
+}
+
+.register-form p {
+    color: #fff;
+    font-size: 12px;
+}

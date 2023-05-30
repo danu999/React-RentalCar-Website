@@ -16,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #000d6b;
+  color: #014542;
   font-weight: 600;
   margin-bottom: 0;
 }
@@ -46,7 +46,7 @@ ul {
 }
 
 .section__title {
-  color: #000d6b;
+  color: #014542;
   font-weight: 600;
   font-size: 2rem;
 }
@@ -69,7 +69,7 @@ section {
 
 .btn {
   padding: 7px 15px;
-  background: #000d6b;
+  background: #014542;
   color: #fff;
   border: none;
   outline: none;
@@ -79,7 +79,7 @@ section {
 
 .btn:hover {
   color: #fff !important;
-  background: #000c6bd0;
+  background: #014542;
 }
 
 @media only screen and (max-width: 768px) {

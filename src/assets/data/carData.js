@@ -1,6 +1,6 @@
 // import all images from assets/images directory
 import img01 from "../all-images/cars-img/nissan-offer.png";
-import img02 from "../all-images/cars-img/offer-toyota.png";
+import img02 from "../all-images/cars-img/mazda.png";
 import img03 from "../all-images/cars-img/bmw-offer.png";
 import img04 from "../all-images/cars-img/nissan-offer.png";
 import img05 from "../all-images/cars-img/offer-toyota.png";
@@ -12,7 +12,7 @@ const carData = [
   {
     id: 1,
     brand: "Tesla",
-    rating: 112,
+    rating: 115,
     carName: "Tesla Malibu",
     imgUrl: img01,
     model: "Model 3",
@@ -27,11 +27,11 @@ const carData = [
 
   {
     id: 2,
-    brand: "Toyota",
+    brand: "Mazda",
     rating: 102,
-    carName: "Toyota Aventador",
+    carName: "Mazda CX-5",
     imgUrl: img02,
-    model: "Model-2022",
+    model: "Model-2018",
     price: 50,
     speed: "20kmpl",
     gps: "GPS Navigation",
